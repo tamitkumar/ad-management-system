@@ -253,15 +253,15 @@ This Spring Boot application allows scheduling, running, and stopping ad campaig
 
 ```
 ┌─────────────┐       ┌─────────────┐       ┌──────────────┐
-│  Client     ├──────▶  Controller  ├──────▶  Service       │
+│  Client     ├──────▶  Controller  ├──────▶  Service      │
 └─────────────┘       └─────────────┘       └────┬─────────┘
-                                               ▼
+                                                 ▼
                                          ┌────────────┐
                                          │ Repository │
                                          └────┬───────┘
                                               ▼
                                       ┌───────────────┐
-                                      │  MySQL    │
+                                      │  MySQL        │
                                       └───────────────┘
                                               ▲
                                               │
